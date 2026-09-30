@@ -4,71 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | VortiaSync</title>
-    <link rel="icon" href="image_2.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-mode">
-    <div class="custom-cursor"></div>
-    
+<body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo-container cursor-hover"><img src="image_2.png" alt="Logo"> VortiaSync</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
-                </ul>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="VortiaSync Logo" id="nav-logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+            <nav id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section style="padding-top: 150px;" class="container fade-in">
-        <h1 style="text-align: center; font-size: 3rem; margin-bottom: 20px;">Transparent <span class="text-gradient">Pricing</span></h1>
-        <div class="pricing-toggle">
-            <span>Monthly</span>
-            <label class="switch"><input type="checkbox" id="price-toggle"><span class="slider"></span></label>
-            <span>Yearly <span class="save-badge">Save 20%</span></span>
+    <section class="pricing-section">
+        <div class="section-header">
+            <h2>Transparent Pricing</h2>
+            <p>Partner with us for the long term. Choose how you want to scale.</p>
+            <div class="toggle-container">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly (Save 15%)</span>
+            </div>
         </div>
-        <div class="grid-3">
+
+        <div class="grid pricing-grid">
             <div class="card price-card">
-                <h3>Starter</h3>
-                <div class="price"><span class="price-amount" data-base="500">£500</span><span class="price-period">/mo</span></div>
-                <ul class="features">
-                    <li>Custom Website</li>
-                    <li>Basic SEO</li>
-                    <li>1 Workflow</li>
+                <h3>Web Management</h3>
+                <h4 class="price" data-monthly="£99" data-yearly="£999">£99<span>/mo</span></h4>
+                <ul>
+                    <li>Routine Security Updates</li>
+                    <li>Uptime Monitoring</li>
+                    <li>Minor Content Updates</li>
+                    <li>Priority Support</li>
                 </ul>
-                <a href="contact.html" class="btn btn-secondary" style="width:100%; text-align:center;">Select Plan</a>
+                <a href="contact.html" class="btn">Get Started</a>
             </div>
-            <div class="card price-card popular">
-                <div class="popular-badge">MOST POPULAR</div>
-                <h3>Growth</h3>
-                <div class="price"><span class="price-amount" data-base="900">£900</span><span class="price-period">/mo</span></div>
-                <ul class="features">
-                    <li>Advanced Website</li>
-                    <li>Advanced SEO</li>
-                    <li>5 Workflows</li>
+            <div class="card price-card featured">
+                <h3>Workflow Automation</h3>
+                <h4 class="price" data-monthly="£249" data-yearly="£2539">£249<span>/mo</span></h4>
+                <ul>
+                    <li>Custom Zapier/Make APIs</li>
+                    <li>CRM Integration</li>
+                    <li>Automated Email Sequences</li>
+                    <li>Monthly Workflow Audit</li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Select Plan</a>
+                <a href="contact.html" class="btn">Get Started</a>
             </div>
             <div class="card price-card">
-                <h3>Enterprise</h3>
-                <div class="price">Custom</div>
-                <ul class="features">
-                    <li>Unlimited Scope</li>
-                    <li>Complex Integrations</li>
-                    <li>Dedicated Manager</li>
+                <h3>Custom Tools Dev</h3>
+                <h4 class="price" data-monthly="£499" data-yearly="£5089">£499<span>/mo</span></h4>
+                <ul>
+                    <li>Dedicated Web App Development</li>
+                    <li>Database Management</li>
+                    <li>User Authentication Systems</li>
+                    <li>Ongoing Code Maintenance</li>
                 </ul>
-                <a href="contact.html" class="btn btn-secondary" style="width:100%; text-align:center;">Contact Us</a>
+                <a href="contact.html" class="btn">Get Started</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container"><img src="image.png" alt="Logo" class="footer-logo"><p>&copy; 2026 VortiaSync.</p></div>
+        <p>&copy; 2026 VortiaSync.co.uk. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
