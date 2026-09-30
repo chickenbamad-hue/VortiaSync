@@ -1,58 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore VortiaSync's services: Web Development, System Automation, Custom Tools, and Retained Website Management.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self' https://formspree.io;">
     <title>Services | VortiaSync</title>
-    <link rel="icon" href="image_2.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://vortiasync.co.uk/services.html">
 </head>
-<body class="dark-mode">
-    <div class="custom-cursor"></div>
-    
+<body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo-container cursor-hover"><img src="image_2.png" alt="Logo"> VortiaSync</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
-                </ul>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="VortiaSync Logo" id="nav-logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+            <nav id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section style="padding-top: 150px;" class="container fade-in">
-        <h1 style="font-size: 3.5rem; text-align: center; margin-bottom: 60px;">Our <span class="text-gradient">Services</span></h1>
-        <div class="grid-2" style="margin-bottom: 80px;">
+    <main>
+        <section class="hero secondary-hero">
+            <div class="hero-content">
+                <h1>Technical Capabilities</h1>
+                <p>End-to-end digital solutions designed to scale your operations.</p>
+            </div>
+        </section>
+
+        <section class="grid services-detailed">
             <div class="card">
-                <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--cyan-bright);">Website Creation</h2>
-                <p style="margin-bottom: 20px; color: var(--text-muted);">Your website is your digital storefront. We build sites that load instantly, adapt beautifully to any device, and rank on search engines.</p>
-                <ul class="features">
-                    <li>Custom Development</li>
-                    <li>Mobile-first Responsive Design</li>
-                    <li>Technical SEO Optimization</li>
-                    <li>Web Accessibility</li>
+                <h3>Website Creation</h3>
+                <p>Custom-coded, highly secure, and lightning-fast websites. We focus heavily on technical SEO, semantic HTML, and clean architecture to ensure your brand stands out and ranks effectively on Google.</p>
+                <ul>
+                    <li>Responsive UI/UX Design</li>
+                    <li>Technical SEO Integration</li>
+                    <li>Conversion Rate Optimization</li>
+                    <li>Analytics & Tracking Setup</li>
                 </ul>
             </div>
             <div class="card">
-                <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--blue-primary);">Business Automation</h2>
-                <p style="margin-bottom: 20px; color: var(--text-muted);">We connect your fragmented software ecosystem to save you hours of manual data entry.</p>
-                <ul class="features">
-                    <li>Workflow Setup</li>
-                    <li>CRM Integration</li>
-                    <li>Custom API Connections</li>
-                    <li>Automated Sequencing</li>
+                <h3>System Automations</h3>
+                <p>We eliminate repetitive administrative tasks by connecting your fragmented software stack. From complex CRM integrations to automated client onboarding flows, we make your business run itself.</p>
+                <ul>
+                    <li>API Integrations (REST/GraphQL)</li>
+                    <li>Data Syncing & Parsing</li>
+                    <li>Automated Lead Routing</li>
+                    <li>Email Sequence Triggers</li>
                 </ul>
             </div>
-        </div>
-    </section>
+            <div class="card">
+                <h3>Custom Business Tools</h3>
+                <p>Off-the-shelf software doesn't always fit. We develop bespoke web portals, inventory trackers, and internal communication dashboards tailored to your exact operational requirements.</p>
+                <ul>
+                    <li>Secure Role-Based Authentication</li>
+                    <li>Custom Database Architecture</li>
+                    <li>Client & Employee Dashboards</li>
+                    <li>Legacy Data Migration</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Ongoing Management</h3>
+                <p>Your digital infrastructure requires constant maintenance. We handle hosting, SSL certificates, weekly security patches, and codebase updates so your systems never experience downtime.</p>
+                <ul>
+                    <li>24/7 Uptime Monitoring</li>
+                    <li>Automated Threat Scanning</li>
+                    <li>Routine Cloud Backups</li>
+                    <li>Priority Technical Support</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container"><img src="image.png" alt="Logo" class="footer-logo"><p>&copy; 2026 VortiaSync.</p></div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>VortiaSync</h4>
+                <p>Basingstoke, England, UK</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Phone: 07387637711</p>
+                <p>Email: macaulyparsons@vortiasync.co.uk</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VortiaSync. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
