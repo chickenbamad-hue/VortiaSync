@@ -3,109 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VortiaSync | Website Creation & Business Automation</title>
-    <!-- Notice these link directly to files in the same folder -->
-    <link rel="icon" href="image_2.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <title>VortiaSync | Web Creation & Automations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-mode">
-    <div class="custom-cursor"></div>
-    <div id="preloader"><div class="spinner"></div></div>
-
+<body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo-container cursor-hover">
-                <img src="image_2.png" alt="VortiaSync Logo"> VortiaSync
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- Replace src with your attached logo -->
+                <img src="logo.png" alt="VortiaSync Logo" id="nav-logo"> 
             </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html" class="btn btn-primary cursor-hover">Get in Touch</a></li>
-                </ul>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+            <nav id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content fade-in">
-                <h1>Sync Your Vision.<br><span class="text-gradient">Automate Your Growth.</span></h1>
-                <p>We build high-performance websites and intelligent business automations. No legacy bloat, just precise, modern engineering designed to scale your operations.</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary cursor-hover">Explore Services</a>
-                    <a href="contact.html" class="btn btn-secondary cursor-hover">Book a Consultation</a>
-                </div>
-            </div>
+        <div class="hero-content">
+            <h1>Engineered for Efficiency. Built for You.</h1>
+            <p>Welcome to VortiaSync. We are a newly established digital agency focused on delivering high-performance website creation, management, custom tools, and workflow automations. No fluff, just results.</p>
+            <a href="pricing.html" class="btn">View Our Plans</a>
         </div>
     </section>
 
-    <section class="container">
-        <div class="grid-2 fade-in">
-            <div class="card cursor-hover">
+    <section class="services">
+        <div class="section-header">
+            <h2>What We Do</h2>
+            <p>Streamline your business with our core services.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
                 <h3>Website Creation</h3>
-                <p>Bespoke, lightning-fast websites engineered to convert. We prioritize responsive design, clean code, and SEO foundations from day one.</p>
+                <p>We build fast, secure, and fully customized websites tailored exactly to your brand's operational needs.</p>
             </div>
-            <div class="card cursor-hover">
-                <h3>Business Automation</h3>
-                <p>Stop doing manual data entry. We connect your apps, build intelligent workflows, and automate repetitive tasks so you can focus on strategy.</p>
+            <div class="card">
+                <h3>Website Management</h3>
+                <p>Focus on your business while we handle hosting, updates, security, and maintenance of your site.</p>
+            </div>
+            <div class="card">
+                <h3>System Automations</h3>
+                <p>Stop doing manual data entry. We automate your workflows so your software does the heavy lifting.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Tools</h3>
+                <p>Need a specific internal tool or portal? We code custom web-based tools to solve your unique problems.</p>
             </div>
         </div>
     </section>
-
-    <section class="container fade-in">
-        <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Our Process</h2>
-        <div class="grid-3">
-            <div class="card">
-                <div class="step-number">01</div>
-                <h3>Discovery</h3>
-                <p>An honest, deep-dive consultation to understand your operational bottlenecks and aesthetic vision.</p>
-            </div>
-            <div class="card">
-                <div class="step-number">02</div>
-                <h3>Architecture</h3>
-                <p>We design the wireframes and blueprint the automation logic, ensuring everything aligns with your goals.</p>
-            </div>
-            <div class="card">
-                <div class="step-number">03</div>
-                <h3>Deployment</h3>
-                <p>Rigorous testing, followed by a seamless launch. You receive comprehensive handover documentation.</p>
-            </div>
-        </div>
-    </section>
-
-    <button id="chatbot-btn" class="cursor-hover">💬</button>
-    <div id="chatbot-window">
-        <div class="chat-header">
-            <strong>Vortia AI</strong>
-            <button id="close-chat" style="background:none;border:none;color:white;cursor:pointer;">✖</button>
-        </div>
-        <div class="chat-body" id="chat-body">
-            <div class="message msg-bot">Hi! I'm the VortiaSync assistant. Ask me about our services, pricing, or process.</div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="chat-input" placeholder="Type a message...">
-            <button id="chat-send">Send</button>
-        </div>
-    </div>
 
     <footer>
-        <div class="container fade-in">
-            <img src="image.png" alt="VortiaSync Footer Logo" class="footer-logo">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p style="color: var(--text-muted);">&copy; 2026 VortiaSync. Designed in the UK.</p>
-        </div>
+        <p>&copy; 2026 VortiaSync.co.uk. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
