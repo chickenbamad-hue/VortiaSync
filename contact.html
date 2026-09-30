@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Macauly Parsons and the VortiaSync team to discuss web creation, system automations, and digital management.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; form-action 'self' https://formspree.io;">
     <title>Contact | VortiaSync</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://vortiasync.co.uk/contact.html">
 </head>
 <body>
     <header>
@@ -16,49 +19,88 @@
             <nav id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="services.html">Services</a>
                 <a href="pricing.html">Pricing</a>
                 <a href="contact.html" class="active">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section class="contact-section">
-        <div class="section-header">
-            <h2>Let's Build Something</h2>
-            <p>Ready to start? Send us a message and we'll reply within 24 hours.</p>
-        </div>
+    <main class="contact-section">
+        <section class="hero secondary-hero">
+            <div class="hero-content">
+                <h1>Initiate a Project</h1>
+                <p>Direct lines only. We respond within standard business hours.</p>
+            </div>
+        </section>
         
-        <div class="form-container">
-            <!-- Replace YOUR_FORM_ID with your Formspree ID -->
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="input-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="service">Service Interested In</label>
-                    <select id="service" name="service">
-                        <option value="website-creation">Website Creation</option>
-                        <option value="management">Website Management</option>
-                        <option value="automation">Automations</option>
-                        <option value="tools">Custom Tools</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-full">Send Message</button>
-            </form>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Direct Contact</h3>
+                <p><strong>Founder:</strong> Macauly Parsons</p>
+                <p><strong>Phone:</strong> <a href="tel:07387637711">07387637711</a></p>
+                <p><strong>Email:</strong> <a href="mailto:macaulyparsons@vortiasync.co.uk">macaulyparsons@vortiasync.co.uk</a></p>
+                <p><strong>Location:</strong> Basingstoke, England, UK</p>
+            </div>
+            
+            <div class="form-container">
+                <!-- Replace YOUR_FORM_ID in the action URL below with your Formspree ID -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="input-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" required autocomplete="organization">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    </div>
+                    <div class="input-group">
+                        <label for="service">Primary Interest</label>
+                        <select id="service" name="service">
+                            <option value="website-creation">Website Creation</option>
+                            <option value="management">Website Management</option>
+                            <option value="automation">System Automations</option>
+                            <option value="tools">Custom Tools</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Project Requirements</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">Submit Request</button>
+                </form>
+            </div>
         </div>
-    </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 VortiaSync.co.uk. All rights reserved.</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>VortiaSync</h4>
+                <p>Basingstoke, England, UK</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Phone: 07387637711</p>
+                <p>Email: macaulyparsons@vortiasync.co.uk</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VortiaSync. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
