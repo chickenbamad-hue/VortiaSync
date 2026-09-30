@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Mobile Menu Toggle
     const menuToggle = document.getElementById("mobile-menu");
     const navLinks = document.getElementById("nav-links");
 
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Pricing Toggle (Monthly vs Yearly)
     const pricingToggle = document.getElementById("pricing-toggle");
     const prices = document.querySelectorAll(".price");
 
